@@ -2,7 +2,6 @@
   background: #ffff;
   border-radius: 1rem;
   margin-top: -10rem;
-  padding: 70px 60px;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
 }
 
 header h2 {
-  color: #111;
+  color: rgb(235, 226, 226);
   font-size: 2.25rem;
 }
 
@@ -21,7 +20,7 @@ header h2 {
   display: flex;
   gap: 0.25rem;
   align-items: center;
-  background: #fff;
+  background: transparent;
   font-size: 16px;    
 }
 
