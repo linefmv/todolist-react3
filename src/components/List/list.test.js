@@ -5,31 +5,31 @@ describe('List.jsx', () => {
   it('should be able to add a task', () => {
     render(<List />)
 
-    const inputElement = screen.getByPlaceholderText('Adicionar nova tarefa')
+    const inputElement = screen.getByPlaceholderText('add new a task')
     const buttonElement = screen.getByTestId('add-task')
     
     fireEvent.change(inputElement, {
       target: {
-        value: 'Estudar react'
+        value: 'do homework'
       }
     })
 
     fireEvent.click(buttonElement)
 
-    const addedFirstTaskTitle = screen.getByText('Estudar react')
+    const addedFirstTaskTitle = screen.getByText('do homework')
 
-    expect(addedFirstTaskTitle).toHaveTextContent('Estudar react')
+    expect(addedFirstTaskTitle).toHaveTextContent('do homework')
 
     fireEvent.change(inputElement, {
       target: {
-        value: 'Estudar teste'
+        value: 'study test'
       }
     })
 
     fireEvent.click(buttonElement)
 
-    const addedSecondTaskTitle = screen.getByText('Estudar teste')
-    expect(addedSecondTaskTitle).toHaveTextContent('Estudar teste')
+    const addedSecondTaskTitle = screen.getByText('study test')
+    expect(addedSecondTaskTitle).toHaveTextContent('study test')
 
 
   })
@@ -47,12 +47,12 @@ describe('List.jsx', () => {
   it('should be able to delete a task', () => {
     render(<List />)
 
-    const inputElement = screen.getByPlaceholderText('Adicionar nova tarefa')
+    const inputElement = screen.getByPlaceholderText('add new a task')
     const buttonElement = screen.getByTestId('add-task')
     
     fireEvent.change(inputElement, {
       target: {
-        value: 'Estudar react'
+        value: 'do homework'
       }
     })
 
@@ -60,14 +60,14 @@ describe('List.jsx', () => {
 
     fireEvent.change(inputElement, {
       target: {
-        value: 'Estudar teste'
+        value: 'study test'
       }
     })
 
     fireEvent.click(buttonElement)
 
-    const addedFirstTaskTitle = screen.getByText('Estudar react')
-    const addedSecondTaskTitle = screen.getByText('Estudar teste')
+    const addedFirstTaskTitle = screen.getByText('do homework')
+    const addedSecondTaskTitle = screen.getByText('study test')
 
     expect(addedFirstTaskTitle).toBeInTheDocument()
     expect(addedSecondTaskTitle).toBeInTheDocument()

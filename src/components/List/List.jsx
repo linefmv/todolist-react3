@@ -30,11 +30,11 @@ const List = () => {
     <>
      <section className='list'>
       <header>
-        <h2>Tarefas a fazer:</h2>
+        <h2>To do list</h2>
         <div className='input-container'>
           <input 
             type='text'
-            placeholder='Adicionar nova tarefa'
+            placeholder='add new a task'
             onChange={(e) => {setNewTask(e.target.value)}}
             value={newTask}
           />
