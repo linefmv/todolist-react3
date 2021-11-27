@@ -1,8 +1,18 @@
 header {
     background-color:  rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgb(92 79 85) 0%, rgb(95 126 163) 100%)
 }
 
-header div {
-    
+.header div {
+    max-width: 1120px;
+    margin: 0 auto;
+  
+    padding: 2rem 1rem 12rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    max-width: 130px;
 }

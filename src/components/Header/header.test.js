@@ -1,10 +1,10 @@
-import {render, screen} from '@testing-library/react';
-import Header from './Header.jsx';
+import { render, screen } from "@testing-library/react"
+import Header from "./Header"
 
 describe('Header.jsx', () => {
-    it('Should render the correct header', () => {
-      render(<Header />)
-      const logoElement = screen.getAllByAltText('logo com a ilustração de um deserto iluminado')
-      expect(logoElement).toBeInTheDocument()
+    it("should render the correct header", () => {
+        render(<Header />)
+        const logoElement = screen.getByAltText('logo de um deserto')
+        expect(logoElement).toBeInTheDocument()
     })
 })

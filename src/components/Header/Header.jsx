@@ -1,11 +1,14 @@
-import logoImage from '../../assets/images/logo.png';
+import LogoImage from "../../assets/logo.png"
 import './header.styles.css'
-export const Header = () => {
+
+const Header = () => {
     return (
-        <header>
-        <div>
-            <img src={logoImage} alt ="logo com a ilustração de um deserto iluminado"></img>
-        </div>
+        <header className='header'>
+            <div>
+                <img src={LogoImage} alt="logo de um deserto" />
+            </div>
         </header>
     )
 }
+
+export default Header
