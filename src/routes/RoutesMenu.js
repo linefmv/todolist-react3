@@ -6,8 +6,8 @@ function RoutesMenu() {
   return (
     <Router>
       <Routes> 
-        <Route path="/" element={Home} />
-        <Route path="/list" element={ListPage} />
+        <Route path="/" element={ <Home/> } />
+        <Route path="/list" element={ <ListPage/> } />
       </Routes>
     </Router>
   );
