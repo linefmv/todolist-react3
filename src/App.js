@@ -1,15 +1,9 @@
-import Header from './components/Header/Header';
-import List from './components/List/List';
-import Relevant from './components/Relevant/Relevant';
-import Routes from './routes/Routes';
+import RoutesMenu from './routes/RoutesMenu';
 
 function App() {
   return (
-    <>
-      <Relevant/>
-      <Routes/>
-      <Header />
-      <List />
+    <>      
+      <RoutesMenu/>
     </>
   );
 }

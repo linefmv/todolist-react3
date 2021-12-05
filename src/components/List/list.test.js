@@ -78,6 +78,21 @@ describe('List.jsx', () => {
     expect(addedFirstTaskTitle).not.toBeInTheDocument()
     expect(addedSecondTaskTitle).toBeInTheDocument()
   })
+
+  it('should be able to mark a task as completed', () => {
+    render(<List/>)
+
+    const inputElement = screen.getByPlaceholderText('add new a task')
+    const buttonElement = screen.getByTestId('add-task')
+
+    fireEvent.change(inputElement, {
+      target: {
+        value: 'do homework'
+    }
+  })
+  fireEvent.click(buttonElement)
+
+  const [item1, item2] = screen.getAllByTestId('task')
 })
 
 

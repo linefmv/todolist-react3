@@ -6,8 +6,12 @@ const Menu = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
+      <li>
+        <Link to="/about">Start</Link>
+      </li>
     </ul>
   );
 };
 
 export default Menu;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  
